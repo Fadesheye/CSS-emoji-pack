@@ -30,6 +30,12 @@ header li:nth-child(2) {
 main{
     display: flex;
 }
+#main2{
+    display: flex;
+}
+#main3{
+    display: flex;
+}
 div#logo {
     font-family: Righteous;
     font-size: larger;
@@ -42,6 +48,7 @@ div#logo {
     height: 250px;
     background-color: #dfd114;
     border-radius: 50%;
+    position: relative;
     margin: auto;
 }
 #happy #eyes{
@@ -73,8 +80,9 @@ div#logo {
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     position: absolute;
-    top: 240px;
-    left: 13.4%;
+    transform: translate(-50%,-50%); 
+    top: 180px;
+    left: 50%;
 }
 div#straight-face {
     width: 250px;
@@ -82,11 +90,13 @@ div#straight-face {
     background-color: #dfd114;
     border-radius: 50%;
     margin: 20px auto;
+    position: relative;
 }
 #straight-face #eyes{
     display: flex;
     justify-content: space-between;
     padding: 60px;
+    /* padding: 20% 15%; */
     margin: 0 -5px;
 }
 #straight-face .eye{
@@ -105,8 +115,10 @@ div#straight-face {
     width: 80px;
     height: 10px;
     position: absolute;
-    margin-left: 87px;  
-    top: 250px;
+    transform: translate(-50%,-50%); 
+    left: 50%;  
+    top: 180px;
+
 }
 #surprised-face{
     width: 250px;
@@ -114,12 +126,13 @@ div#straight-face {
     background-color: #dfd114;
     border-radius: 50%;
     margin: 20px auto;
+    position: relative;
 }
 #surprised-face #eyes{
     display: flex;
     justify-content: space-around;
     padding: 20%;
-
+    /* padding: 20% 15%; */
 }
 #surprised-face .eye {
     background-color: #ffff;
@@ -141,7 +154,189 @@ div#straight-face {
     height: 60px;
     border-radius: 50%;
     background-color: black;
-    margin-left: 91px;
+    position: absolute;
+    left: 50%;
+    top: 180px;
+    transform: translate(-50%,-50%);
 }
+#sad-face {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background-color: #dfd114;
+    border-radius: 50%;
+    margin: auto;
+}
+#sad-face #eyes{
+    display: flex;
+    justify-content: space-around;
+    padding: 20%;
+    /* padding: 20% 15%; */
+}
+#sad-face .eye {
+    border-color: black;
+    background-color: #000;
+    border-radius: 70%;
+    /* border: solid 5px #000; */
+    width: 30px;
+    height: 50px;
+    /* border-radius: 50px 10px;  */
+    justify-content: center;
+    align-items: center;
+    display: flex;    
+}
+#sad-face .mouth{
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    /* background-color: #0f00b3; */
+    border: 10px solid transparent;
+    border-top: 13px solid #000;
+    border-radius: 90%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 200px;
+}
+#smiley-face {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background-color: #dfd114;
+    border-radius: 50%;
+    margin: auto;
+}
+#smiley-face #eyes{
+    display: flex;
+    justify-content: space-around;
+    padding: 20%;
+    /* padding: 20% 15%; */
+}
+#smiley-face .eye {
+    border-color: black;
+    background-color: #000;
+    border-radius: 70%;
+    /* border: solid 5px #000; */
+    width: 30px;
+    height: 50px;
+    /* border-radius: 50px 10px;  */
+    justify-content: center;
+    align-items: center;
+    display: flex;    
+}
+#smiley-face .mouth{
+    position: absolute;
+    width: 110px;
+    height: 70px;
+    /* background-color: #0f00b3; */
+    border: 9px solid transparent;
+    border-bottom: 10px solid #000;
+    border-radius: 70%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+#tongue-smile {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background-color: #dfd114;
+    border-radius: 50%;
+    margin: auto;
+}
+#tongue-smile #eyes{
+    display: flex;
+    justify-content: space-around;
+    padding: 20%;
+    /* padding: 20% 15%; */
+}
+#tongue-smile .eye {
+    border-color: black;
+    background-color: #000;
+    border-radius: 70%;
+    /* border: solid 5px #000; */
+    width: 30px;
+    height: 50px;
+    /* border-radius: 50px 10px;  */
+    justify-content: center;
+    align-items: center;
+    display: flex;    
+}
+#tongue-smile .mouth{
+    position: absolute;
+    width: 130px;
+    height: 65px;
+    background-color: black;
+    border-bottom-left-radius: 65px;
+    border-bottom-right-radius: 65px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 170px;
 
-
+}
+#toungue-smile .tongue {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    background-color: red;
+    top: 35px;
+    border-radius: 80%;
+}
+#teeth-smile {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background-color: #dfd114;
+    border-radius: 50%;
+    margin: auto;
+    top: 20px;
+}
+#teeth-smile #eyes{
+    display: flex;
+    justify-content: space-around;
+    padding: 26%;
+    
+}
+#teeth-smile .eye {
+    
+    border-color: black;
+    /* background-color: #000; */
+    border: 5px solid black transparent;
+    border-radius: 70%;
+    border-top: 9px solid black;
+    width: 40px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;    
+}
+#teeth-smile .mouth{
+    position: absolute;
+    width: 130px;
+    height: 65px;
+    background-color: black;
+    border-bottom-left-radius: 65px;
+    border-bottom-right-radius: 65px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 170px;
+    border-width: 20px;
+    border-color: black;
+    border: 6px solid black;
+}
+.tongue {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    background-color: red;
+    top: 35px;
+    border-radius: 80%;
+}
+.teeth {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    background-color: white;
+    bottom: 40px;
+    
+}
